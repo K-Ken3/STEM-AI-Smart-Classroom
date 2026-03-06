@@ -22,7 +22,7 @@ export class AttemptsService {
     let aiResult: any;
     try {
       const response = await firstValueFrom(
-        this.httpService.post('http://127.0.0.1:8000/solve', {
+        this.httpService.post('http://stem-ai-ai-service.onrender.com/solve', {
           problem: data.question,
         }),
       );
