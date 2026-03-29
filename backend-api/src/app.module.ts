@@ -5,6 +5,8 @@ import { UsersModule } from './users/users.module';
 import { AppController } from './app.controller';
 import { AuthModule } from './auth/auth.module';
 import { AttemptsModule } from './attempts/attempts.module';
+import { AiModule } from './ai/ai.module';
+import { QuestionsModule } from './questions/questions.module';
 
 @Module({
   imports: [
@@ -15,6 +17,8 @@ import { AttemptsModule } from './attempts/attempts.module';
     UsersModule,
     AuthModule,
     AttemptsModule,
+    AiModule,
+    QuestionsModule,
   ],
   controllers: [AppController],
 })
